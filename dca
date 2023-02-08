@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+void diametro(float raio){
+	
+	float diam;
+	
+	diam = 2*raio;
+	
+	printf("\n diametro = %.2f",diam);
+}
+
+void circunferencia(float raio,float pi){
+	
+	float circu;
+	
+	circu = 2*pi*raio;
+	
+	printf("\n circunferencia = %.2f",circu);
+	 
+}
+
+void area(float raio,float pi){
+	
+	float a;
+	
+	a = pi*pow(raio,2);
+	
+	printf("\n area = %.2f",a);
+}
+
+int main(){
+	
+	float raio;
+	float pi=3.14159;
+	
+	printf("\n insira o raio:");
+	scanf("%f",&raio);
+	
+	diametro(raio);
+	circunferencia(raio,pi);
+	area(raio,pi);
+	
+	return 0;
+}
